@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* The original image */
+        .image {
+  position: relative;
+  width: 200px;
+  height: 110px;
+}
+
+/* The cropped image shown normally */
+.image.normal img {
+ 
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* The cropped image shown on hover */
+.image.hover img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  object-fit: cover;
+
+}
+
+/* The cropped image shown on click */
+.image.click img {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  object-fit: cover;
+  transform: translateY(-100%);
+}
+    </style>
+</head>
+
+<body>
+    <div class="image normal">
+        <img src="./image/proj1.png">
+    </div>
+    <script>
+        // Toggle the "hover" class when the element is hovered over
+        document.querySelector('.image').addEventListener('mouseenter', function () {
+            this.classList.add('hover');
+        });
+
+        document.querySelector('.image').addEventListener('mouseleave', function () {
+            this.classList.remove('hover');
+        });
+
+        // Toggle the "click" class when the element is clicked
+        document.querySelector('.image').addEventListener('click', function () {
+            this.classList.toggle('click');
+        });
+    </script>
+</body>
+
+</html>
