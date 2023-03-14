@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!--css link kiya hu yaha pr-->
-     <script>
+    <script>
         // WOW INIT
         new WOW().init();
 
@@ -20,21 +19,21 @@
 <body id="index">
 
     <nav class="fixed-top">
-        <!--nav bar create kiya hu fixed top k naam se-->
+
         <div class="navbar">
-            <!--main nav bar ka width yhi pr define kiya hua hai-->
+
             <div class="logo">
-                <!--nav bar mein jo logo hai uske liye hai ye-->
+
                 <a class="active" href="index.html"><img src="./image/ideatelogo.png" alt="ideate logo"
                         class="logo_image"></a>
             </div>
             <ul id="navbar">
-                <!--unordered list nav bar k elements k liye-->
-                <li><a href="moto.html">Moto</a></li>
-                <li><a href="wedo.html">Work</a></li>
+
+                <li><a href="motto.html">Motto</a></li>
+                <li><a href="work.html">Work</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <i class="pls"><li><a href="join.html" class="joinbtn">Join Us</a><i></li>
+                <i><li><a href="join.html" class="joinbtn">Join Us</a></li></li>
             </ul>
         </div>
     </nav>
@@ -44,17 +43,17 @@
     </div>
     <div class="animated fadeInRight" data-aos-duration="3000">
         <img src="./image/bulb.png" id="img2">
-    <img src="./image/Rectangle 136.png" id="img3">
-    
-</div>
+        <img src="./image/Rectangle 136.png" id="img3">
+
+    </div>
 
     <!-- <div class="bg"> <img src="./image/homebg.png" alt="bg1"></div> -->
     <div class="container">
-      
+
         <div class="timer ">
-            <h1 class="animate__animated animate__heartBeat">Figuring Out <span style="color:#F44F1F">F</span><span style="color:#A158FF">i</span></span><span
-                    style="color:#0ACE82">g</span></span><span style="color:#FF7261">m</span></span><span
-                    style="color:#1ABCFD">a</span></h1>
+            <h1 class="animate__animated animate__heartBeat">Figuring Out <span style="color:#F44F1F">F</span><span
+                    style="color:#A158FF">i</span></span><span style="color:#0ACE82">g</span></span><span
+                    style="color:#FF7261">m</span></span><span style="color:#1ABCFD">a</span></h1>
         </div>
         <div class="time animate__animated animate__flash">
             <div>
@@ -71,36 +70,34 @@
             </div>
         </div>
     </div>
-   
 
-        <!--figuring out FIGMA ka js code hai ye-->
-        <script>
-            var countDownDate = new Date("March 15, 2023 00:00:00").getTime();
-            var x = setInterval(function () {
-                var now = new Date().getTime();
-                var distance = countDownDate - now;
+    <script>
+        var countDownDate = new Date("March 15, 2023 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
 
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                hours = '  ' + hours + ' : ';
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                minutes = minutes + ' : ';
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            hours = '  ' + hours + ' : ';
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            minutes = minutes + ' : ';
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                document.getElementById("days").innerHTML = days;
-                document.getElementById("hours").innerHTML = hours;
-                document.getElementById("minutes").innerHTML = minutes;
-                document.getElementById("seconds").innerHTML = seconds;
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
 
-                if (distance < 0) {
-                    clearInterval();
-                }
-            }, 1000);
-        </script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+            if (distance < 0) {
+                clearInterval();
+            }
+        }, 1000);
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

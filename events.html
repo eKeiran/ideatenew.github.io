@@ -1,52 +1,38 @@
-<!--YE SIRF TESTING K LIYE EVENTS MEIN BANAYA HU.. CHANGE KRNA HAI ESKO.. YE KAHA REDIRECT HOGA WO MALUM NI THA ESLYE EVENT WALE PAGE MEIN BANAYA HU-->
 <!DOCTYPE html>
 <html>
 
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>IDEATE</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ideate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!--css link kiya hu yaha pr-->
     <script src="./horizontal scrolling.js"></script>
-    <!--Js code for hirizonall scrolling:-->
-
-
 
     </script>
 </head>
-
+<?php include "./" ?>
 <body id="events">
     <nav class="fixed-top">
-        <!--nav bar create kiya hu fixed top k naam se-->
         <div class="navbar">
-            <!--main nav bar ka width yhi pr define kiya hua hai-->
             <div class="logo">
-                <!--nav bar mein jo logo hai uske liye hai ye-->
                 <a href="index.html"><img src="./image/ideatelogo.png" alt="ideate logo" class="logo_image"></a>
             </div>
             <ul id="navbar">
-                <!--unordered list nav bar k elements k liye-->
-                <li><a href="moto.html">Moto</a></li>
-                <li><a href="wedo.html">Work</a></li>
+                <li><a href="motto.html">Motto</a></li>
+                <li><a href="work.html">Work</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="join.html" class="joinbtn">Join Us</a></li>
             </ul>
         </div>
     </nav>
-  
-    <section class="head">
-        <!-- GRID MEIN KRNE K LIYE MAIN DIV BNA HAI YAHA PR-->
-        <div class="mhead">
-            <!--TEXT WALE SIDE K LIYE YE DIV HAI-->
-           
+
+    <section class="grid">
+        <div class="grid2">
             <main>
                 <div class="scrolling-wrapper squares">
-                    <!--container that scrolls horizontally-->
                     <div class="card c1 animate__animated animate__bounceInDown">
                         <div class="text">
                             We discussed the importance of UX in our daily lives. UX is an important part to operational
@@ -66,24 +52,23 @@
                     </div>
                 </div>
             </main>
-          
+
         </div>
         <img src="./image/circle.png" id="img2events">
         <div class='main2 animated fadeInLeft'>
             Gallery
         </div>
         <div class="gallery-wrapper squares ">
-            <!--container that scrolls horizontally-->
             <div class="galcard "></div>
             <div class="galcard"></div>
             <div class="galcard"></div>
             <div class="galcard"></div>
         </div>
-        
-      
-            
+
+
+
     </section>
-    
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
