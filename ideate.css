@@ -906,7 +906,7 @@ join {
     border: dashed;
     width: 60vw;
     margin-left: 15vw;
-    margin-top: -60vw;
+    margin-top: -100vw;
     align-items: center;
     text-align: center;
     z-index: 2;
