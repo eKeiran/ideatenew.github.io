@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-<body id="project1">
+<body id="join">
     <nav class="fixed-top">
         <div class="navbar">
             <div class="logo">
@@ -25,26 +25,35 @@
         </div>
     </nav>
 
-
-    <div class="heading animate__animated animate__fadeInDown animate__delay-1s">
-        <h1 class="joinh1"> <span>AND THE </span> OPPORTUNITIES DON'T END.</h1>
+    <div class="heading2 animate__animated animate__fadeInDown animate__delay-1s">
+        <h1 class="joinh1"> AND THE <span> OPPORTUNITIES DON'T END</span>.</h1>
     </div>
 
     <img src="./image/circle.png" id="imgjoin" > </img>
-    <img src="./image/phone.png" id="phone">
+    <img src="./image/phone2.png" id="phone"> </img>
+
+    <div class="containereve animate__animated animate__fadeIn animate__delay-2s">
+
+        <img src="./image/proj11.png" id="uijoe"  onmouseover="changeImage('uijoe', './image/proj111.png')" onmouseout="changeImage('uijoe', './image/proj11.png')" onclick="changeImage('image1', './image/proj1111.png')" />
+        <img src="./image/proj22.png" id="erc"  onmouseover="changeImage('erc', './image/proj222.png')" onmouseout="changeImage('erc', './image/proj22.png')" onclick="changeImage('image1', './image/proj2222.png')" />
+
+    </div>
 
     <section id="jointext">
-        <h1 class="animate__animated animate__jackInTheBox animate__delay-1s">
-            <img class="padding" src="./image/Vector.png">
-            <img class="padding" src="./image/Vector-1.png">
-            <img class="padding" src="./image/Vector-2.png">
-            <img class="padding" src="./image/Vector-3.png">
+        <h1 class="animate__animated animate__jackInTheBox animate__delay-2s">
+            <a href="https://in.linkedin.com/company/ideateclub?original_referer=https%3A%2F%2Fwww.google.com%2F"><img class="padding" src="./image/Vector.png"></a>
+            <a href="https://www.instagram.com/ideateclub/"><img class="padding" src="./image/Vector-1.png"></a>
+           <a href="https://chat.whatsapp.com/D0HrFnnBQqjAjPu982EJEq"><img class="padding" src="./image/Vector-2.png"></a>
         </h1>
         <p class="animate__animated animate__tada animate__delay-2s"><img class="jimg" src="./image/Vector-4.png">School
             of Engineering MIT ADT University, Loni Kalbhor. </p>
         <p class="animate__animated animate__tada animate__delay-2s"> <img class="jimg"
                 src="./image/Vector-5.png">ideateuxui.mitsoe@mituniversity.edu.in</p>
-    
+    <script>
+        function changeImage(id, src) {
+    document.getElementById(id).src = src;
+}
+    </script>
 </body>
 
 </html>
