@@ -360,11 +360,13 @@ nav ul li i {
         transform: scale(1);
         filter: drop-shadow(0 0 0 rgba(255, 167, 79, 0));
     }
+
     25% {
         transform: scale(1);
         top: -75vw;
-    left: -100vw;
+        left: -100vw;
     }
+
     100% {
         transform: scale(0.9);
         bottom: 100%;
@@ -547,8 +549,8 @@ nav ul li i {
 }
 
 #img2events {
-    padding-left: 1200px;
-    bottom: 360px;
+    padding-left: 120vw;
+    bottom: 45vw;
     position: relative;
     z-index: -1;
     -webkit-animation: events 1s 1s ease-out forwards;
@@ -561,7 +563,7 @@ nav ul li i {
     0% {}
 
     100% {
-        transform: scale(2);
+        transform: scale(1.7);
         padding-left: 80px;
 
     }
@@ -586,7 +588,7 @@ nav ul li i {
     font-weight: 500;
     font-family: Raleway;
     font-size: 1.5vw;
-    line-height: 23px;
+    line-height: 2.9vw;
     color: #626262;
 }
 
@@ -623,13 +625,14 @@ main {
     margin-top: -15vw;
     margin-bottom: 2%;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     width: 320rem;
     /*width of scrolling*/
     height: fit-content;
     transform-origin: top left;
     transform: rotate(90deg) translateY(-100vh);
-
+    -webkit-overflow-scrolling: touch; 
 
 }
 
@@ -638,12 +641,12 @@ main {
 }*/
 
 .card {
-
+    flex: 0 0 auto;
     display: inline-block;
     /*border-style: dotted;*/
     align-items: center;
-    width: 1280px;
-    height: 560px;
+    width: 162vw;
+    height: 71vw;
     margin-left: 10vw;
     margin-top: -2.3vw;
     /*   scroll-snap-align: start; */
@@ -668,8 +671,8 @@ main {
 }
 
 .text {
-    font-size: 22px;
-    margin-top: 395px;
+    font-size: 2vw;
+    margin-top: 50vw;
     width: fit-content;
     block-size: fit-content;
     color: oldlace;
@@ -695,7 +698,7 @@ main {
 .main2 {
     color: oldlace;
     font-family: Raleway;
-    font-size: 40px;
+    font-size: 5vw;
     margin-bottom: 58VW;
     margin-top: -54.5VW;
     margin-left: -7VW;
@@ -736,8 +739,8 @@ main {
     display: inline-block;
     border-style: double;
     align-items: center;
-    width: 350px;
-    height: 200px;
+    width: 44vw;
+    height: 25vw;
     background-color: white;
     margin-right: -2rem;
     margin-left: 4rem;
@@ -760,6 +763,7 @@ main {
     background-size: cover;
     overflow-x: hidden;
     overflow-y: hidden;
+    margin-bottom: 30vw;
 }
 
 .heading h1 {
@@ -829,7 +833,7 @@ main {
 
 .size {
     width: 500px;
-    height: 400px;
+    height: 500px;
 }
 
 .size2 {
@@ -850,10 +854,12 @@ main {
 }
 
 .size3 img {
+    position: fixed;
     object-fit: cover;
     width: 300px;
     height: 200px;
     scale: 1.1;
+    margin-top: -7vw;
 }
 
 /*for the image with different positions*/
@@ -971,7 +977,8 @@ main {
         overflow-y: hidden;
         overflow-x: hidden;
     }
-/*Navbar code*/
+
+    /*Navbar code*/
     nav {
         width: 85%;
         display: flex;
@@ -1167,7 +1174,7 @@ main {
         color: #FF7F4C;
     }
 
-/*Motto Page*/
+    /*Motto Page*/
     #motto {
         background-color: #E6E6E6;
         overflow-x: hidden;
@@ -1176,7 +1183,7 @@ main {
 
     }
 
-    
+
 
     #mottobox {
         top: 50%;
@@ -1421,197 +1428,220 @@ main {
             filter: invert(1) brightness(95%) opacity(100%);
         }
     }
-
 /*Events*/
-    .grid {
-        padding-top: 17%;
-        padding-left: 10%;
-        display: grid;
-        grid-template-columns: 1fr 10fr;
-        position: static;
-    }
 
-    .grid2 h1 {
-        color: #A158FF;
-        font-family: Raleway;
-        font-weight: 600;
-        font-size: 1.5vw;
-    }
+#events {
+    background-color: #E6E6E6;
+}
 
-    .grid2 span {
-        font-weight: 500;
-        font-family: Raleway;
-        font-size: 1.5vw;
-        line-height: 23px;
-        color: #626262;
-    }
+#img2events {
+    padding-left: 152vw;
+    bottom: 45vw;
+    position: relative;
+    z-index: -1;
+    -webkit-animation: events 1s 1s ease-out forwards;
+    animation: events 1s 1s ease-out forwards;
+    -webkit-animation-duration: 0.45s;
+    animation-duration: 0.45s;
+}
 
-    .grid2 p {
-        font-weight: 500;
-        font-family: Raleway;
-        font-size: 1.3vw;
-    }
+@keyframes events {
+    0% {}
 
-    .para {
-        padding-top: 3%;
-    }
+    100% {
+        transform: scale(2);
+        padding-left: 1vw;
 
-    /*horizontal scroll CSS*/
-    main {
-
-        position: fixed;
-        top: 15rem;
-        left: 6.5rem;
-        padding: 5%;
-        /*  note vh and vw switched  */
-        width: 150vh;
-        height: 120vw;
-        /*    */
-        transform-origin: top left;
-        transform: rotate(-90deg) translateX(-100vh);
-        overflow-x: hidden;
-        overflow-y: scroll;
-        /*   scroll-snap-type: y mandatory; */
-    }
-
-    .scrolling-wrapper {
-        white-space: nowrap;
-        margin-top: -15vw;
-        margin-bottom: 2%;
-        display: flex;
-        flex-direction: row;
-        width: 320rem;
-        /*width of scrolling*/
-        height: fit-content;
-        transform-origin: top left;
-        transform: rotate(90deg) translateY(-100vh);
-
-
-    }
-
-    /*::-webkit-scrollbar {
-        display: none;
-    }*/
-
-    .card {
-
-        display: inline-block;
-        /*border-style: dotted;*/
-        align-items: center;
-        width: 1280px;
-        height: 560px;
-        margin-left: 10vw;
-        margin-top: -2.3vw;
-        /*   scroll-snap-align: start; */
-        overflow-y: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: monospace;
-        font-size: 1.4vm;
-        /*  backface visibility keeps font from looking weird  */
-        transition: all .4s ease-in-out;
-    }
-
-    .card:hover {
-        transform: scale(1.1);
-    }
-
-    .c1 {
-        background-image: url(./image/Card1.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .text {
-        font-size: 22px;
-        margin-top: 395px;
-        width: fit-content;
-        block-size: fit-content;
-        color: oldlace;
-        font-family: Raleway;
-        white-space: normal;
-        transition: all .4s ease-in-out;
-        -webkit-animation: text 1s 1s ease-out forwards;
-        animation: text 1s 1s ease-out forwards;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
-    }
-
-    @keyframes text {
-        0% {
-            margin-top: 395px;
-        }
-
-        100% {
-            margin-top: 95px;
-        }
-    }
-
-    .main2 {
-        color: oldlace;
-        font-family: Raleway;
-        font-size: 40px;
-        margin-bottom: 58VW;
-        margin-top: -54.5VW;
-        margin-left: -7VW;
-        -webkit-animation: 2s 2s ease-out forwards;
-        animation: 2s 2s ease-out forwards;
-
-    }
-
-    .gallery-wrapper {
-        bottom: 85%;
-        white-space: nowrap;
-        margin-left: -14vw;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        width: fit-content;
-        /*width of scrolling*/
-        height: fit-content;
-        -webkit-animation: gal 1s 1s ease-out forwards;
-        animation: gal 1s 1s ease-out forwards;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
-
-    }
-
-    @keyframes gal {
-        0% {
-            margin-top: -500px;
-        }
-
-        100% {
-            margin-top: -720px;
-        }
-    }
-
-    .galcard {
-
-        display: inline-block;
-        border-style: double;
-        align-items: center;
-        width: 350px;
-        height: 200px;
-        background-color: white;
-        margin-right: -2rem;
-        margin-left: 4rem;
-        margin-top: 2rem;
-        /*   scroll-snap-align: start; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: monospace;
-        font-size: 3rem;
-        /*  backface visibility keeps font from looking weird  */
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
     }
 }
 
+.grid {
+    padding-top: 17%;
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    position: static;
+}
+
+.grid2 h1 {
+    color: #A158FF;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.grid2 span {
+    font-weight: 500;
+    font-family: Raleway;
+    font-size: 1.5vw;
+    line-height: 2.9vw;
+    color: #626262;
+}
+
+.grid2 p {
+    font-weight: 500;
+    font-family: Raleway;
+    font-size: 1.3vw;
+}
+
+.para {
+    padding-top: 3%;
+}
+
+/*horizontal scroll CSS*/
+main {
+
+    position: fixed;
+    top: 15rem;
+    left: 6.5rem;
+    padding: 5%;
+    /*  note vh and vw switched  */
+    width: 150vh;
+    height: 120vw;
+    /*    */
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100vh);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /*   scroll-snap-type: y mandatory; */
+}
+
+.scrolling-wrapper {
+    white-space: nowrap;
+    margin-top: -15vw;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    width: 280rem;
+    /*width of scrolling*/
+    height: fit-content;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-100vh);
+
+
+}
+
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+
+.card {
+
+    display: inline-block;
+    /*border-style: dotted;*/
+    align-items: center;
+    width: 140vw;
+    height: 65vw;
+    margin-left: 10vw;
+    margin-top: -2.3vw;
+    /*   scroll-snap-align: start; */
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 1.4vm;
+    /*  backface visibility keeps font from looking weird  */
+    transition: all .4s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.c1 {
+    background-image: url(./image/Card1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text {
+    font-size: 1.5vw;
+    margin-top: 30vw;
+    width: fit-content;
+    block-size: fit-content;
+    color: oldlace;
+    font-family: Raleway;
+    white-space: normal;
+    transition: all .4s ease-in-out;
+    -webkit-animation: text 1s 1s ease-out forwards;
+    animation: text 1s 1s ease-out forwards;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@keyframes text {
+    0% {
+        margin-top: 40vw;
+    }
+
+    100% {
+        margin-top: -20vw;
+    }
+}
+
+.main2 {
+    color: oldlace;
+    font-family: Raleway;
+    font-size: 3vw;
+    margin-bottom: 58VW;
+    margin-top: -54.5VW;
+    margin-left: -7VW;
+    -webkit-animation: 2s 2s ease-out forwards;
+    animation: 2s 2s ease-out forwards;
+}
+
+.gallery-wrapper {
+    bottom: 85%;
+    white-space: nowrap;
+    margin-left: -14vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    /*width of scrolling*/
+    height: fit-content;
+    -webkit-animation: gal 1s 1s ease-out forwards;
+    animation: gal 1s 1s ease-out forwards;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+
+}
+
+@keyframes gal {
+    0% {
+        margin-top: -10vw;
+    }
+
+    100% {
+        margin-top: -45vw;
+    }
+}
+
+.galcard {
+
+    display: inline-block;
+    border-style: double;
+    align-items: center;
+    width: 20vw;
+    height: 10vw;
+    background-color: white;
+    margin-right: -2rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    /*   scroll-snap-align: start; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 3rem;
+    /*  backface visibility keeps font from looking weird  */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+}
 /*Projects*/
 
-/*Join Us*/
 
-/**/
+
+/*Join Us*/ 
