@@ -891,7 +891,7 @@ join {
 
     100% {
         transform: rotate(-26deg);
-        margin-top: -220vw;
+        margin-top: -240vw;
         filter: brightness(140%);
         scale: (1.4);
     }
@@ -902,7 +902,7 @@ join {
     border: dashed;
     width: 60vw;
     margin-left: 15vw;
-    margin-top: -110vw;
+    margin-top: -120vw;
     align-items: center;
     text-align: center;
     z-index: 2;
