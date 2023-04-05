@@ -854,7 +854,7 @@ join {
     white-space: nowrap;
     z-index: 1;
     font-size: 5vw;
-    margin-top: 25vw;
+    margin-top: 22vw;
 
 }
 
@@ -891,7 +891,7 @@ join {
 
     100% {
         transform: rotate(-26deg);
-        margin-top: -240vw;
+        margin-top: -230vw;
         filter: brightness(140%);
         scale: (1.4);
     }
