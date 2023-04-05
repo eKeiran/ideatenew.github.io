@@ -819,8 +819,8 @@ nav ul li i {
 /*JOIN*/
 
 join {
-    max-width: 100;
-    max-height: 100;
+    max-width: 100%;
+    max-height: 100%;
     overflow-x:hidden;
 }
 
@@ -906,7 +906,7 @@ join {
     border: dashed;
     width: 60vw;
     margin-left: 15vw;
-    margin-top: -80vw;
+    margin-top: -60vw;
     align-items: center;
     text-align: center;
     z-index: 2;
@@ -1643,6 +1643,7 @@ join {
     join {
         max-width: screen;
         max-height: screen;
+       overflow-x: hidden;
     }
 
     #imgjoin {
