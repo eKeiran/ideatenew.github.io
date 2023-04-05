@@ -746,10 +746,6 @@ nav ul li i {
     line-height: 20px;
 }
 
-
-
-
-
 #imgproj {
 
     padding-left: 1200px;
@@ -906,7 +902,7 @@ join {
     border: dashed;
     width: 60vw;
     margin-left: 15vw;
-    margin-top: -100vw;
+    margin-top: -110vw;
     align-items: center;
     text-align: center;
     z-index: 2;
@@ -915,8 +911,6 @@ join {
     height: 30vw;
 
 }
-
-
 
 #jointext p {
     font-size: 3.2vw;
@@ -936,8 +930,6 @@ join {
     padding-right: 1.2vw;
 }
 
-
-
 #uijoe {
     position: absolute;
     top: 75%;
@@ -954,12 +946,9 @@ join {
     visibility: hidden;
 }
 
-
 /*Media Queries for responsiveness*/
 
-
 /*400px: Tablets */
-
 
 /*900px: laptops*/
 @media screen and (min-width: 900px) {
